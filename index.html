@@ -46,11 +46,20 @@
   }
 
   .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: var(--gold);
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     font-weight: 400;
     letter-spacing: 0.12em;
-    color: var(--gold);
+  }
+
+  .nav-logo img {
+    height: 40px;
+    width: auto;
+    display: block;
   }
 
   .nav-links {
@@ -618,7 +627,10 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">ARKAN</div>
+  <div class="nav-logo">
+    <img src="logo.jpeg" alt="Arkan logo">
+    <span>ARKAN</span>
+  </div>
   <button class="nav-toggle" aria-label="Toggle menu">Menu</button>
   <ul class="nav-links">
     <li><a href="#projects">Projects</a></li>
